@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h2>Jquery Attribute Function</h2>
+<div> <p> This is <span id="test">some</span> kind of test.</p></div>
+
+<div id="remtest" style="background:yellow;display:block;border:2px solid #000;height:120px">
+<p>First Element in the div</p>
+<p>second Element in the div</p>
+<p>Third Element in the div</p>
+
+</div>
+
+<ol>
+<li>first child</li>
+<li id="secondchild">Second Child</li>
+<li>third Child</li>
+<ul>
+<li class="innerclass">inner child</li>
+</ul>
+</ol>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+ <script>
+ //$("#test").parent().css("color","red");
+ console.log("parent of test Id ",$("#test").parent());
+ console.log("All the parents of test Id ",$("#test").parents());
+ console.log("Parents until Div ",$("#test").parentsUntil("div"));
+ console.log("find :",$("#remtest").find("p"));
+ console.log("immediate Children ",$("ol").children());
+ console.log("sibling of second child :",$("#secondchild").siblings());
+ console.log("next  sibiling of innerclass :",$("#secondchild").next());
+ console.log("filter",$("li").filter(".innerclass"));
+  
+ 
+ 
+ 
+
+</script>
+</body>
+</html>
